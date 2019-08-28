@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Copyright>Servant Software 2019</Copyright>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0</PackageVersion>
+    <PackageId>ServantSoftware.ConsoleHost</PackageId>
+    <Title>Servant Software Console Host</Title>
+    <Authors>Michael Butler</Authors>
+    <Description>Template for creating a console app using Microsoft.Extensions.Hosting</Description>
+    <PackageTags>dotnet-new;templates;console;Host</PackageTags>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageProjectUrl>https://github.com/GunnerMichael/ConsoleHostTemplate</PackageProjectUrl>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/GunnerMichael/ConsoleHostTemplate</RepositoryUrl>
+  </PropertyGroup>
+
+  
+
+  <ItemGroup>
+    <Content Include="..\src\**\*" Exclude="..\src\**\bin\**;..\src\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>  
