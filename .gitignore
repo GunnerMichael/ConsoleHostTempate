@@ -1,4 +1,5 @@
-src/bin
-src/obj
+pack/content/bin
+pack/content/obj
 pack/bin
 pack/obj
+.vscode

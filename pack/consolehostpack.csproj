@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Copyright>Servant Software 2019</Copyright>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0</PackageVersion>
+    <PackageVersion>1.01</PackageVersion>
     <PackageId>ServantSoftware.ConsoleHost</PackageId>
     <Title>Servant Software Console Host</Title>
     <Authors>Michael Butler</Authors>
@@ -15,14 +15,14 @@
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <PackageReleaseNotes>First release. Package format error fixed</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/GunnerMichael/ConsoleHostTemplate</RepositoryUrl>
   </PropertyGroup>
 
   
 
   <ItemGroup>
-    <Content Include="..\src\**\*" Exclude="..\src\**\bin\**;..\src\**\obj\**" />
+    <Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**" />
     <Compile Remove="**\*" />
   </ItemGroup>
 
